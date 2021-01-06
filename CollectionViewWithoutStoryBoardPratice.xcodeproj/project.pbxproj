@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		63F2756725A542AE00E59F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F2756625A542AE00E59F90 /* Assets.xcassets */; };
 		63F2756A25A542AE00E59F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2756825A542AE00E59F90 /* LaunchScreen.storyboard */; };
 		63F2756D25A542AE00E59F90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2756C25A542AE00E59F90 /* main.m */; };
+		63F2757725A5442F00E59F90 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2757625A5442F00E59F90 /* CollectionViewCell.m */; };
+		C13E4AAC7ECEF9845DBA445E /* Pods_CollectionViewWithoutStoryBoardPratice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F227A824223E62AB3B10FE8B /* Pods_CollectionViewWithoutStoryBoardPratice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3068C6BA1B6DF81EE5EAD4A0 /* Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig"; sourceTree = "<group>"; };
 		63F2755725A542AB00E59F90 /* CollectionViewWithoutStoryBoardPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewWithoutStoryBoardPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F2755A25A542AB00E59F90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63F2755B25A542AB00E59F90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		63F2756925A542AE00E59F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F2756B25A542AE00E59F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F2756C25A542AE00E59F90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63F2757525A5442F00E59F90 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		63F2757625A5442F00E59F90 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		AA84C42D10BAA215170E1550 /* Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig"; sourceTree = "<group>"; };
+		F227A824223E62AB3B10FE8B /* Pods_CollectionViewWithoutStoryBoardPratice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewWithoutStoryBoardPratice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13E4AAC7ECEF9845DBA445E /* Pods_CollectionViewWithoutStoryBoardPratice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0B4B9C3924215EE899BBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA84C42D10BAA215170E1550 /* Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig */,
+				3068C6BA1B6DF81EE5EAD4A0 /* Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		63F2754E25A542AB00E59F90 = {
 			isa = PBXGroup;
 			children = (
 				63F2755925A542AB00E59F90 /* CollectionViewWithoutStoryBoardPratice */,
 				63F2755825A542AB00E59F90 /* Products */,
+				4F0B4B9C3924215EE899BBFC /* Pods */,
+				65A18FCFF64B997F3FA98325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,8 @@
 				63F2755E25A542AB00E59F90 /* SceneDelegate.m */,
 				63F2756025A542AB00E59F90 /* ViewController.h */,
 				63F2756125A542AB00E59F90 /* ViewController.m */,
+				63F2757525A5442F00E59F90 /* CollectionViewCell.h */,
+				63F2757625A5442F00E59F90 /* CollectionViewCell.m */,
 				63F2756325A542AB00E59F90 /* Main.storyboard */,
 				63F2756625A542AE00E59F90 /* Assets.xcassets */,
 				63F2756825A542AE00E59F90 /* LaunchScreen.storyboard */,
@@ -76,6 +97,14 @@
 			path = CollectionViewWithoutStoryBoardPratice;
 			sourceTree = "<group>";
 		};
+		65A18FCFF64B997F3FA98325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F227A824223E62AB3B10FE8B /* Pods_CollectionViewWithoutStoryBoardPratice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63F2757025A542AE00E59F90 /* Build configuration list for PBXNativeTarget "CollectionViewWithoutStoryBoardPratice" */;
 			buildPhases = (
+				77D277D70C889BA2544C59AC /* [CP] Check Pods Manifest.lock */,
 				63F2755325A542AB00E59F90 /* Sources */,
 				63F2755425A542AB00E59F90 /* Frameworks */,
 				63F2755525A542AB00E59F90 /* Resources */,
+				CF3DFC2121C649A44337F5FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +171,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77D277D70C889BA2544C59AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollectionViewWithoutStoryBoardPratice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3DFC2121C649A44337F5FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63F2755325A542AB00E59F90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				63F2756225A542AB00E59F90 /* ViewController.m in Sources */,
+				63F2757725A5442F00E59F90 /* CollectionViewCell.m in Sources */,
 				63F2755C25A542AB00E59F90 /* AppDelegate.m in Sources */,
 				63F2756D25A542AE00E59F90 /* main.m in Sources */,
 				63F2755F25A542AB00E59F90 /* SceneDelegate.m in Sources */,
@@ -225,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,11 +362,12 @@
 		};
 		63F2757125A542AE00E59F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA84C42D10BAA215170E1550 /* Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NX6P3CM58B;
+				DEVELOPMENT_TEAM = W4395MK238;
 				INFOPLIST_FILE = CollectionViewWithoutStoryBoardPratice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,11 +381,12 @@
 		};
 		63F2757225A542AE00E59F90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3068C6BA1B6DF81EE5EAD4A0 /* Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NX6P3CM58B;
+				DEVELOPMENT_TEAM = W4395MK238;
 				INFOPLIST_FILE = CollectionViewWithoutStoryBoardPratice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
