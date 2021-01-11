@@ -8,7 +8,6 @@
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
 #import "HorizentalCollectionViewController.h"
-#import "TableViewCell.h"
 #import "ColorSetting.h"
 
 @interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>

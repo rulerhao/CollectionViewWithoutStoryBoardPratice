@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) NSInteger Random_Row_Index;
 
 @property(nonatomic, strong) UILabel *TextLabel;
-- (void) initView;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,8 +11,6 @@
 {
     NSUInteger collectionView_Column_Num;
     NSUInteger collectionView_Row_Num;
-    float collectionView_Cell_Width;
-    float collectionView_Cell_Height;
     float view_Width_Height_Ratio;
     float buttonCollectionView_height;
     ColorSetting *colorSetting;
@@ -60,18 +58,20 @@
     if(textField == self.columnTextField) {
         if ([self stringIsPositiveInteger:self.columnTextField.text]) {
             collectionView_Column_Num = [self.columnTextField.text intValue];
-            collectionView_Cell_Width = self.verticalCollectionView.bounds.size.width / collectionView_Column_Num;
         }
-        else
+        else {
             self.columnTextField.text = [NSString stringWithFormat: @"%ld", (long)collectionView_Column_Num];
+            [self showNotPositiveIntAlertView];
+        }
     }
     else if(textField == self.rowTextField) {
         if ([self stringIsPositiveInteger:self.rowTextField.text]) {
             collectionView_Row_Num = [self.rowTextField.text intValue];
-            collectionView_Cell_Height = self.verticalCollectionView.bounds.size.height / collectionView_Row_Num;
         }
-        else
+        else {
             self.rowTextField.text = [NSString stringWithFormat: @"%ld", (long)collectionView_Row_Num];
+            [self showNotPositiveIntAlertView];
+        }
     }
     if(collectionView_Column_Num > 0 && collectionView_Row_Num > 0) {
         [self.verticalCollectionView reloadData];
@@ -108,9 +108,9 @@
         UICollectionViewCell *Cell =  [collectionView dequeueReusableCellWithReuseIdentifier:@"verticalCellIdentifier" forIndexPath:indexPath];
         
         float X_Location = 0;
-        float Y_Location = [indexPath row] * collectionView_Cell_Height;
+        float Y_Location = [indexPath row] * self.verticalCollectionView.bounds.size.height / collectionView_Row_Num;
         float X_Size = [collectionView bounds].size.width;
-        float Y_Size = collectionView_Cell_Height;
+        float Y_Size = self.verticalCollectionView.bounds.size.height / collectionView_Row_Num;
         
         [Cell setFrame:CGRectMake(X_Location, Y_Location, X_Size, Y_Size)];
         
@@ -301,6 +301,35 @@
     [self.view addSubview:self.buttonCollectionView];
 }
 
+#pragma mark - Rotate Delegate
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [self.verticalCollectionView reloadData];
+        [self.buttonCollectionView reloadData];
+    }];
+}
+
+#pragma mark - Alert View
+
+- (void) showNotPositiveIntAlertView {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"輸入有違常規"
+                                                                   message:@"請輸入正整數"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    // OK按鍵的部分
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"好的"
+                                                       style:UIAlertActionStyleDefault
+       handler:^(UIAlertAction * action) {
+    }];
+    [alert addAction:okAction];
+    [self presentViewController:alert
+                       animated:YES
+                     completion:nil];
+}
+
 #pragma mark - Methods
 
 /**
@@ -387,9 +416,10 @@
     return Same_Class_Count;
 }
 
+// NSString 是否為正整數
 - (BOOL) stringIsPositiveInteger : (NSString *) int_String {
     if (int_String.length <= 0 ||
-        [int_String rangeOfCharacterFromSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]].location != NSNotFound) {
+        [int_String rangeOfCharacterFromSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]].location != NSNotFound  || [[int_String substringWithRange:NSMakeRange(0, 1)] isEqual:@"0"]) {
         return false;
     }
     else return true;
