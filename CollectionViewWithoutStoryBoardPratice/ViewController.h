@@ -7,9 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
-#import "CollectionViewCell.h"
-@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
+#import "HorizentalCollectionViewController.h"
+#import "TableViewCell.h"
+#import "ColorSetting.h"
 
+@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
 
 @end
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6372B59625A80D05002DB28B /* ColorSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6372B59525A80D05002DB28B /* ColorSetting.m */; };
 		63F2755C25A542AB00E59F90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2755B25A542AB00E59F90 /* AppDelegate.m */; };
 		63F2755F25A542AB00E59F90 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2755E25A542AB00E59F90 /* SceneDelegate.m */; };
 		63F2756225A542AB00E59F90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2756125A542AB00E59F90 /* ViewController.m */; };
@@ -14,12 +15,15 @@
 		63F2756725A542AE00E59F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F2756625A542AE00E59F90 /* Assets.xcassets */; };
 		63F2756A25A542AE00E59F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2756825A542AE00E59F90 /* LaunchScreen.storyboard */; };
 		63F2756D25A542AE00E59F90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2756C25A542AE00E59F90 /* main.m */; };
-		63F2757725A5442F00E59F90 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2757625A5442F00E59F90 /* CollectionViewCell.m */; };
+		63F2757725A5442F00E59F90 /* HorizentalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2757625A5442F00E59F90 /* HorizentalCollectionViewController.m */; };
+		63F2758525A5C7B900E59F90 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2758425A5C7B900E59F90 /* TableViewCell.m */; };
 		C13E4AAC7ECEF9845DBA445E /* Pods_CollectionViewWithoutStoryBoardPratice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F227A824223E62AB3B10FE8B /* Pods_CollectionViewWithoutStoryBoardPratice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3068C6BA1B6DF81EE5EAD4A0 /* Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice.release.xcconfig"; sourceTree = "<group>"; };
+		6372B59425A80D05002DB28B /* ColorSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ColorSetting.h; path = /Users/louie/Desktop/PraticeObjectiveC/CollectionViewWithoutStoryBoardPratice/ColorSetting.h; sourceTree = "<absolute>"; };
+		6372B59525A80D05002DB28B /* ColorSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ColorSetting.m; path = /Users/louie/Desktop/PraticeObjectiveC/CollectionViewWithoutStoryBoardPratice/ColorSetting.m; sourceTree = "<absolute>"; };
 		63F2755725A542AB00E59F90 /* CollectionViewWithoutStoryBoardPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewWithoutStoryBoardPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F2755A25A542AB00E59F90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63F2755B25A542AB00E59F90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,8 +36,10 @@
 		63F2756925A542AE00E59F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F2756B25A542AE00E59F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F2756C25A542AE00E59F90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63F2757525A5442F00E59F90 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		63F2757625A5442F00E59F90 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		63F2757525A5442F00E59F90 /* HorizentalCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizentalCollectionViewController.h; sourceTree = "<group>"; };
+		63F2757625A5442F00E59F90 /* HorizentalCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizentalCollectionViewController.m; sourceTree = "<group>"; };
+		63F2758325A5C7B900E59F90 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		63F2758425A5C7B900E59F90 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		AA84C42D10BAA215170E1550 /* Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewWithoutStoryBoardPratice/Pods-CollectionViewWithoutStoryBoardPratice.debug.xcconfig"; sourceTree = "<group>"; };
 		F227A824223E62AB3B10FE8B /* Pods_CollectionViewWithoutStoryBoardPratice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewWithoutStoryBoardPratice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +68,10 @@
 		63F2754E25A542AB00E59F90 = {
 			isa = PBXGroup;
 			children = (
+				6372B59425A80D05002DB28B /* ColorSetting.h */,
+				6372B59525A80D05002DB28B /* ColorSetting.m */,
+				63F2758325A5C7B900E59F90 /* TableViewCell.h */,
+				63F2758425A5C7B900E59F90 /* TableViewCell.m */,
 				63F2755925A542AB00E59F90 /* CollectionViewWithoutStoryBoardPratice */,
 				63F2755825A542AB00E59F90 /* Products */,
 				4F0B4B9C3924215EE899BBFC /* Pods */,
@@ -86,8 +96,8 @@
 				63F2755E25A542AB00E59F90 /* SceneDelegate.m */,
 				63F2756025A542AB00E59F90 /* ViewController.h */,
 				63F2756125A542AB00E59F90 /* ViewController.m */,
-				63F2757525A5442F00E59F90 /* CollectionViewCell.h */,
-				63F2757625A5442F00E59F90 /* CollectionViewCell.m */,
+				63F2757525A5442F00E59F90 /* HorizentalCollectionViewController.h */,
+				63F2757625A5442F00E59F90 /* HorizentalCollectionViewController.m */,
 				63F2756325A542AB00E59F90 /* Main.storyboard */,
 				63F2756625A542AE00E59F90 /* Assets.xcassets */,
 				63F2756825A542AE00E59F90 /* LaunchScreen.storyboard */,
@@ -219,9 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F2756225A542AB00E59F90 /* ViewController.m in Sources */,
-				63F2757725A5442F00E59F90 /* CollectionViewCell.m in Sources */,
+				63F2758525A5C7B900E59F90 /* TableViewCell.m in Sources */,
+				63F2757725A5442F00E59F90 /* HorizentalCollectionViewController.m in Sources */,
 				63F2755C25A542AB00E59F90 /* AppDelegate.m in Sources */,
 				63F2756D25A542AE00E59F90 /* main.m in Sources */,
+				6372B59625A80D05002DB28B /* ColorSetting.m in Sources */,
 				63F2755F25A542AB00E59F90 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
